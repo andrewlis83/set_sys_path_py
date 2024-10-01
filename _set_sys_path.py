@@ -14,7 +14,6 @@ def set_syspath_location():
             location = line.split(' ', 1)[1]  # Get the value after 'Location:'
             return location
 
-if __name__ == "__main__":
-    location = set_syspath_location()
-    sys.path.append(location)
-    print(f"sys.path updated to: {location}")
+location = set_syspath_location()
+sys.path.append(location)
+print(f"sys.path updated to: {location}")
